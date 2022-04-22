@@ -1,0 +1,107 @@
+
+		var bginit = 
+		{
+			labels:
+			{
+				title: '__ Mejor Tarifa Disponible',
+				checkin: 'Fecha __ llegada',
+				nights: 'N. de noches',
+				button: '_______ Online',
+				shortMonths: ["Ene", "Feb", "Mar", "___", "May", "Jun", "Jul", "Ago", "___", "Oct", "Nov", "Dic"]
+			},
+
+			vars:
+			{
+				testing: true,
+				today:  new Date (2022,2,25,10,26,33,0),
+				apikey: '044b3ae156e710be14a1af92bdba009b',
+				channelKey: '58_5__4_971__00__29__10492813__4',
+				____: 'https://book.evorafarmhotel.com/api/bg/book.php',
+				client: '968f3310f247cede',
+				host: 'https://secure.guestcentric.net',
+				language: 'es',
+				skin: '_______',
+				_________: false,
+				sess_id: 'sh044b3ae156e710be14a1af92bdba009b16482039932475',
+				months3:    ["Ene", "Feb", "Mar", "Abr", "___", "Jun", "Jul", "Ago", "Sep", "___", "Nov", "Dic"],
+				monthsFull: ["Enero", "Febrero", "_____", "Abril", "Mayo", "Junio", "Julio", "______", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+				weekdays1:  ["D", "L", "M", "M", "_", "V", "S"],
+				weekdays3:  ["Dom", "___", "Mar", "Mié", "Jue", "Vie", "___"],
+				_______: '2024-02-28',
+				dateFormat: 'd/m/Y',
+				startWeekDay: 1,
+				nrNights: 2,
+				maxNrNights: 15,
+				___________: '2022-03-25'
+			}
+		};
+	
+(function()
+{var bgy,log,B;B={_stack:[],checkStack:function(hNode)
+{var i,li,stack=B._stack;for(i=0,li=stack.length;i <li;++i) {if(hnode="==stack[i])" {return="" true;}}="" stack.push(hnode);return="" false;},registergadget:function()="" {var="" gadget="{gadget:"bookingGadget",status:"waiting",start:B.init};if(!window.gcGadgetStack)" {gadget.status="loading" ;window.gcgadgetstack="[gadget];gadget.start();}" else="" if(gcgadgetstack[gcgadgetstack.length-1].status="=="loaded")" {gadget.status="loading" ;gcgadgetstack.push(gadget);gadget.start();}="" else="" {gcgadgetstack.push(gadget);}},changegadgetstatus:function()="" {var="" i,li,cur;for(i=""></li;++i)><li;i++) {cur="gcGadgetStack[i];if(cur.status==="loading")" {cur.status="loaded" ;}="" else="" if(cur.status="=="waiting")" {cur.status="loading" ;cur.start();break;}}},setlinkerparam:function(){if(bginit.vars.linkerparam="=undefined){var" ga="window[window['GoogleAnalyticsObject']];bginit.vars.linkerParam='';if(ga&&ga.getAll){bginit.vars.linkerParam=ga.getAll()[0].get('linkerParam');}}},init:function()" {try="" {if(!(yahoo&&bginit))="" {return="" false;}="" b.set();}="" catch(err)="" {b.changegadgetstatus();return="" false;}="" return="" true;},set:function()="" {var="" gacallback,gajshost,a,m;b.changegadgetstatus();bgy="YAHOO;if(bginit.vars.gaCode){window['GoogleAnalyticsObject']='ga';window['ga']=window['ga']||function(){(window['ga'].q=window['ga'].q||[]).push(arguments);};window['ga'].l=1*new" date();a="document.createElement('script');m=document.getElementsByTagName('script')[0];a.async=1;a.src='//www.google-analytics.com/analytics.js';m.parentNode.insertBefore(a,m)" ga('create',bginit.vars.gacode,'auto',{'name':'gcpagetracker','allowlinker':true});ga('gcpagetracker.send','pageview',window.location+'?action="showingConnectionToBG');}" b.setbrowser();b.triggers="bgy.util.Dom.getElementsBy(function(el)" {return(el.getattribute("rel")||bgy.util.dom.hasclass(el,"gcbookinggadget"));});if(!b.triggers.length)="" {return="" false;}="" function="" callback(o)="" {var="" i,li,cur,triggertype,dom=""></li;i++)><li;i++) {cur="B.triggers[i];Dom.setStyle(cur,"visibility","hidden");triggerType=cur.getAttribute("rel")||"gcBookingGadget";switch(triggerType)" {case"bgshorthand":b.attachshorthand(cur);break;case"bglink":b.attachlink(cur);break;default:if(dom.hasclass(cur,"gcbookinggadget"))="" {b.attachshorthand(cur);}="" else="" {b.attachspeciallink(cur);}="" break;}="" if(bgy.env.ua.ie||!dom.hasclass(cur,"gcbookinggadget"))="" {dom.setstyle(cur,"visibility","visible");}}}="" b.setvars();b.language="bginit.vars.language||"en";B.skin=bginit.vars.skin||"default";optimizedURL=("https:"===document.location.protocol)?B.url.media:B.url.mediaStatic;bgy.util.Get.css(optimizedURL+B.skin+"/css.css",{scope:this,onSuccess:callback});return" true;},url:{media:"https://secure.guestcentric.net/media/triggers/",mediastatic:"https://static.guestcentric.net/media/triggers/",js:"https://secure.guestcentric.net/js/",jsstatic:"https://static.guestcentric.net/js/",bg:bginit.vars.purl},widgets:{calendar:{},dropdown:{}},setvars:function()="" {if(!b.vars)="" {b.vars="{};}" b.vars.today="bginit.vars.today;B.vars.apikey=bginit.vars.apikey;B.vars.currencySymbol=bginit.vars.currencySymbol;B.vars.currencyDirection=bginit.vars.currencyDirection;B.vars.currencyCountry=bginit.vars.currencyCountry;B.vars.currencyDecimalsSeparator=bginit.vars.currencyDecimalsSeparator;B.vars.currencyThousandsSeparator=bginit.vars.currencyThousandsSeparator;B.vars.maxNrNights=bginit.vars.maxNrNights;B.vars.endDate=bginit.vars.endDate||false;B.vars.initialAdults=bginit.vars.initialAdults;B.vars.initialChildren=bginit.vars.initialChildren;B.vars.maxRooms=bginit.vars.maxRooms;B.vars.room=bginit.vars.room;B.vars.channelKey=bginit.vars.channelKey||"";B.vars.weekdays1=bginit.vars.weekdays1||["S","M","T","W","T","F","S"];B.vars.weekdays3=bginit.vars.weekdays3||["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];B.vars.months3=bginit.vars.months3||["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];B.vars.monthsFull=bginit.vars.monthsFull||["January","February","March","April","May","June","July","August","September","October","November","December"];B.vars.newWindow=bginit.vars.newWindow||false;B.vars.dateFormat=bginit.vars.dateFormat||"Y-m-d";B.vars.startWeekDay=(bginit.vars.startWeekDay!==undefined?bginit.vars.startWeekDay:1);B.vars.nrNights=bginit.vars.nrNights;B.vars.checkInDate=bginit.vars.checkInDate;return;},unformatHotelBgDate:function(dateStr)" {try="" {datestr="dateStr.replace(/\//g,"-");switch(B.vars.dateFormat)" {case"d-m-y":case"d/m/y":split="dateStr.split("-");dateStr=split[1]+"/"+split[0]+"/"+split[2];break;case"Y-m-d":case"Y/m/d":split=dateStr.split("-");dateStr=split[1]+"/"+split[2]+"/"+split[0];break;case"m-d-Y":case"m/d/Y":split=dateStr.split("-");dateStr=split[0]+"/"+split[1]+"/"+split[2];break;}" return="" datestr;}="" catch(err)="" {return="" datestr;}},setbrowser:function()="" {var="" ua="navigator.userAgent,Dom=bgy.util.Dom,body=document.body,eua=bgy.env.ua,ie=eua.ie;function" _getversion(rexp)="" {return="" ua.match(rexp)[1];}="" if(ie)="" {dom.addclass(body,"ie"+ie);}="" else="" {if(eua.gecko="">0)
+{Dom.addClass(body,"gecko");if(/Firefox/.test(ua))
+{Dom.addClass(body,"ff"+_getVersion(/(?:Firefox\/)([0-9])/));}}
+else if(eua.webkit)
+{Dom.addClass(body,"webkit");if(/Chrome/.test(ua))
+{Dom.addClass(body,"chrome");}}
+else if(eua.opera)
+{Dom.addClass(body,"opera");Dom.addClass(body,"opera"+parseInt(bgy.env.ua.opera,10));}
+else
+{Dom.addClass(body,"unknown");}}
+return;},attachLink:function(trigger)
+{var U=bgy.util,config,target,seed="bgLink-"+bgy.env._id_counter;if(B.checkStack(trigger))
+{return;}
+bgy.env._id_counter+=1;U.Dom.addClass(trigger,"bgLink");target=trigger.getAttribute("target")||"_self";config={trigger:trigger,seed:trigger.id||seed,target:target};U.Event.addListener(trigger,"click",B.submit,config);return;},attachSpecialLink:function(trigger)
+{var ______,___________,______,___=_______.____________("___"),______="_____";___ migratedButton=trigger.getAttribute("data-migrated");if(!(/^bglink/.test(att))||B.checkStack(trigger))
+{return;}
+paramString=att.match(/^bglink\[(.*?)\]/i)||att.match(/^bglinkBAR\[(.*?)\]/i);paramString=paramString[1];params=paramString.split(",");if(!(/^\d+$/.test(params[1])))
+{params[1]=0;}
+if(!(/^\d{4}-\d{2}-\d{2}$/.test(params[0])))
+{params[0]=0;}
+values={start:params[0],nights:params[1],preselect:unescape(params[2]),advanceBooking:params[3]};bgy.util.Dom.addClass(trigger,"bgLink");if(migratedButton!="1"){bgy.util.Event.addListener(trigger,"click",B.submit,{trigger:trigger,seed:trigger.id,isPreselected:true,values:values});}},attachShorthand:function(trigger)
+{var seed,layoutSh,labels=bginit.labels,Event=bgy.util.Event;if(B.checkStack(trigger))
+{return;}
+bgy.util.Dom.setStyle(trigger,"visibility","hidden");bgy.util.Dom.addClass(trigger,"gc_sh");seed=trigger.id;if(!B.labels)
+{B.labels={};}
+B.labels.title=labels.title;B.labels.checkin=labels.checkin;B.labels.nights=labels.nights;B.labels.button=labels.button;B.labels.shortMonths=labels.shortMonths;if(bgy.util.Dom.hasClass(trigger,"vertical"))
+{layoutSh="gc_verticalSh";}
+else
+{layoutSh="gc_horizontalSh";}
+trigger.innerHTML=B.insertForm(seed,layoutSh);B.attachCalendar(B.vars.endDate,seed);B.attachDropdown(seed);Event.addListener(seed+"shortHandCheckRates","click",B.submit,{trigger:trigger,seed:seed});Event.addListener(seed+"shortHandCheckRatesform","submit",B.abortSubmit);return;},insertForm:function(seed,layoutSh)
+{var form,i;form=' <form id="'+seed+'shortHandCheckRatesform" method="GET" class="'+layoutSh+'">';form+=' <div class="shortHandTitle">'+B.labels.title+' </div>';form+=' <div id="'+seed+'shortHandDate" class="shortHandDate">';form+=' <div class="checkinLabel">'+B.labels.checkin+' </div>';form+=' <div id="'+seed+'shortHandCalendarShell" class="shortHandCalendarShell">';form+=' <input id="'+seed+'startDay" class="startDay" name="startDay" value="'+B.date.dateToStandard(new Date(B.vars.checkInDate),B.vars.dateFormat)+'" />';form+=' <div id="'+seed+'shortHandCalendarIcon" class="shortHandCalendarIcon"></div>';form+=' <div id="'+seed+'shortHandCalendarContainer" class="shortHandCalendarContainer"></div>';form+=' </div>';form+=' </div>';form+=' <div id="'+seed+'shortHandNrNights" class="shortHandNrNights">';form+=' <div class="shortHandNrNightsLabel">'+B.labels.nights+' </div>';form+=' <input id="'+seed+'nrNights" name="nrNightsField" class="nrNights" value="'+B.vars.nrNights+'" />';form+=' <select id="'+seed+'shortHandNrNightsSelect" name="shortHandNrNightsSelect" class="shortHandNrNightsSelect">';for(i=1;i <=b.vars.maxnrnights;i++) {form+='<option value="' +i+'"="">'+i+' ';}
+form+=' </=b.vars.maxnrnights;i++)></select>';form+=' </div>';form+=' <div id="'+seed+'shortHandButton" class="shortHandButton">';form+=' <button id="'+seed+'shortHandCheckRates" class="shortHandCheckRates" title="shortHandCheckRates" name="shortHandCheckRates">'+B.labels.button+' </button>';form+=' </div>';form+=' </form>';return form;},attachCalendar:function(lastDay,seed)
+{var calAtt,wCal,date=B.date,vars=B.vars,Event=bgy.util.Event;if(!(/^([0-9]{4})(-{1})([0-1]{1}[0-9]{1})(-{1})([0-3]{1}[0-9]{1})$/g).test(lastDay))
+{lastDay=date.get();bgy.widget.DateMath._addDays(lastDay,396);lastDay.setDate(0);vars.lastDay=date.dateToCalendar(lastDay);}
+else
+{vars.lastDay=date.standardToCalendar(B.vars.endDate);}
+vars.today=date.dateToCalendar(B.date.get());calAtt={close:false,selected:date.standardToCalendar(vars.checkInDate),mindate:vars.today,maxdate:vars.lastDay,HIDE_BLANK_WEEKS:true,START_WEEKDAY:vars.startWeekDay,LOCALE_WEEKDAYS:"1char",WEEKDAYS_1CHAR:vars.weekdays1,MONTHS_LONG:vars.monthsFull};B.widgets.calendar[seed+"shortHandCalendar"]=new bgy.widget.Calendar(seed+"shortHandCalendar",seed+"shortHandCalendarContainer",calAtt);wCal=B.widgets.calendar[seed+"shortHandCalendar"];wCal.isShowing=false;wCal.isInRange=function(val){var ___=_.____.______________(___ Date(vars.today),"Y-m-d"),max=B.date.dateToStandard(new Date(vars.lastDay),"Y-m-d"),isInRange,value,ar_value,ar_min,ar_max;if((/^[0-9]{4}-{1}[0-9]{2}-{1}[0-9]{2}$/.test(min))&&(/^[0-9]{4}-{1}[0-9]{2}-{1}[0-9]{2}$/.test(max))&&(/^[0-9]{4}-{1}[0-9]{2}-{1}[0-9]{2}$/.test(val))){ar_value=val.split("-",3);value=new Date(ar_value[0],ar_value[1]-1,ar_value[2]);ar_min=min.split("-",3);min=new Date(ar_min[0],ar_min[1]-1,ar_min[2]);ar_max=max.split("-",3);max=new ____(______[0],______[1]-1,______[2]);__(_____>=___&&_____ <=max){isinrange=true;}else{isinrange=false;}}else{isinrange=false;} return="" isinrange;};wcal.setselectedday="function(type,args,obj)" {var="" year=""></=max){isinrange=true;}else{isinrange=false;}}else{isinrange=false;}><10) {month="0" +month;}=""></10)><10) {day="0" +day;}="" bgy.util.dom.get(seed+"startday").value="B.date.dateToStandard(new" date(month+"/"+day+"/"+year),b.vars.dateformat);bgy.util.event.removelistener(document.body,"click",this.toggle);this.isshowing="false;this.hide();};wCal.doNextMonthNav=function(e,cal)" {var="" navs;bgy.util.event.preventdefault(e);bgy.util.event.stopevent(e);settimeout(function(){cal.nextmonth();navs="bgy.util.Dom.getElementsByClassName(cal.Style.CSS_NAV_RIGHT,"a",cal.oDomContainer);if(navs&&navs[0]){try{navs[0].focus();}catch(e){}}},0);};wCal.doPreviousMonthNav=function(e,cal)" {var="" navs;bgy.util.event.preventdefault(e);bgy.util.event.stopevent(e);settimeout(function(){cal.previousmonth();navs="bgy.util.Dom.getElementsByClassName(cal.Style.CSS_NAV_LEFT,"a",cal.oDomContainer);if(navs&&navs[0]){try{navs[0].focus();}catch(e){}}},0);};wCal.toggle=function(evt)" {var="" calpagedate,event="bgy.util.Event,body=document.body;if(wCal.isShowing)" {event.removelistener(body,"click",wcal.toggle);wcal.hide();wcal.isshowing="false;}" else="" {try="" {dateform="bgy.util.Dom.get(seed+"startDay").value;dateForm=B.unformatHotelBgDate(dateForm);dateForm=B.date.dateToStandard(new" date(dateform),"y-m-d");calpagedate="B.date.getCalPagedate(dateForm,"standard");}" catch(err)="" {dateform="wCal.getSelectedDates()[0];dateForm=B.unformatHotelBgDate(dateForm);dateForm=B.date.dateToStandard(new" date(dateform),"y-m-d");calpagedate="B.date.getCalPagedate(dateForm,"date");}" wcal.cfg.setproperty("pagedate",calpagedate);wcal.render();event.removelistener(body,"click",wcal.toggle);bgy.util.dom.get(seed+"startday").focus();wcal.show();wcal.isshowing="true;Event.stopPropagation(evt);Event.addListener(body,"click",wCal.toggle);}};wCal.setValueFromField=function(evt)" {var="" fielddate=""></10)><10) {return;}="" fieldvalue="B.unformatHotelBgDate(fieldDate.value);fieldValue=B.date.dateToStandard(new" date(fieldvalue),"y-m-d");try="" {if(wcal.isinrange(fieldvalue))="" {wcal.select(date.standardtocalendar(fieldvalue));}="" else="" {fielddate.value="date.dateToStandard(wCal.getSelectedDates()[0],B.vars.dateFormat);}}" catch(err)="" {fielddate.value="date.dateToStandard(wCal.getSelectedDates()[0],B.vars.dateFormat);}};wCal.disableArrows=function()" {var="" rarrow,larrow,previousmonthlastday,dom="bgy.util.Dom,nextMonthFirstDay=new" date(wcal.cfg.config.pagedate.value);bgy.widget.datemath._adddays(nextmonthfirstday,wcal.monthdays);if(wcal.isdateoob(nextmonthfirstday))="" {rarrow="Dom.getElementsByClassName(wCal.Style.CSS_NAV_RIGHT,"a",wCal.oDomContainer);Dom.setStyle(rArrow,"display","none");}" previousmonthlastday="new" date(wcal.cfg.config.pagedate.value);bgy.widget.datemath._adddays(previousmonthlastday,-1);if(wcal.isdateoob(previousmonthlastday))="" {larrow="Dom.getElementsByClassName(wCal.Style.CSS_NAV_LEFT,"a",wCal.oDomContainer);Dom.setStyle(lArrow,"display","none");}};Event.addListener(seed+"shortHandCalendarIcon","click",wCal.toggle);Event.addListener(seed+"startDay","click",wCal.toggle);Event.addListener(seed+"startDay","keyup",wCal.setValueFromField);wCal.selectEvent.subscribe(wCal.setSelectedDay,wCal,true);wCal.renderEvent.subscribe(wCal.disableArrows,wCal,true);wCal.render();return;},attachDropdown:function(seed)" {var="" ddatt,wnights;ddatt="{type:"menu",menu:seed+"shortHandNrNightsSelect"};wNights=new" bgy.widget.button(seed+"nrnights",ddatt);b.widgets.dropdown[seed+"nrnights"]="wNights;wNights.onMenuItemClick=function(evt)" {wnights._button.innerhtml="wNights._configs.selectedMenuItem.getValue().srcElement.text;};wNights.getMenu().clickEvent.subscribe(wNights.onMenuItemClick,wNights,true);return;},abortSubmit:function(evt)" {bgy.util.event.preventdefault(evt);},submit:function(evt,arg)="" {var="" frm,content="" ,vars="B.vars,Dom=bgy.util.Dom,elems=[],dayAndNights=false;elems.push(document.getElementById(arg.seed+"shortHandDate"));elems.push(document.getElementById(arg.seed+"shortHandNrNights"));if(Dom.get(arg.seed+"startDay")&&(!window.getComputedStyle||(elems[0]&&window.getComputedStyle(elems[0],null).display!=="none"&&elems[1]&&window.getComputedStyle(elems[1],null).display!=="none"))){dayAndNights=true;}" function="" setselectedstartday(selecteddate){try{selecteddate="selectedDate.replace(/\//g,"-");switch(B.vars.dateFormat)" {case"d-m-y":case"d/m/y":split="selectedDate.split("-");selectedDate=split[2]+"-"+split[1]+"-"+split[0];break;case"Y-m-d":case"Y/m/d":split=selectedDate.split("-");selectedDate=split[0]+"-"+split[1]+"-"+split[2];break;case"m-d-Y":case"m/d/Y":split=selectedDate.split("-");selectedDate=split[2]+"-"+split[0]+"-"+split[1];break;}" if(/[0-9]{4}-[0-9]{2}-[0-9]{2}/.test(selecteddate))="" {vars.startselection="selectedDate;}" else="" {vars.startselection="B.date.dateToStandard(B.date.get());}}catch(err){vars.startSelection=B.date.dateToStandard(B.date.get());}}" if(dayandnights){setselectedstartday(dom.get(arg.seed+"startday").value);if(b.widgets.dropdown[arg.seed+"nrnights"]._configs.selectedmenuitem.getvalue()){vars.nrnights="B.widgets.dropdown[arg.seed+"nrNights"]._configs.selectedMenuItem.getValue().srcElement.text;}" content+='<input name="startDay" type="hidden" value="' +vars.startselection+'"=""></10)>';content+=' <input name="nrNights" type="hidden" value="'+vars.nrNights+'" />';}else if(!Dom.get(arg.seed+"startDay")&&arg.isPreselected){if(Dom.get(arg.values)&&arg.values.hasOwnProperty('start')&&arg.values.hasOwnProperty('nights')){var bgStartDate=arg.values.start;var adults=Dom.get(arg.seed).dataset.adults;if(!!adults){content+=' <input name="nrAdults" type="hidden" value="'+adults+'" />';}
+var att=Dom.get(arg.seed).getAttribute("rel");if(/^bglink/.test(att)){var paramString=att.match(/^bglink\[(.*?)\]/i)||att.match(/^bglinkBAR\[(.*?)\]/i);var params=paramString[1].split(",");if(/^\d{4}-\d{2}-\d{2}$/.test(params[0])){bgStartDate=params[0];}}
+if(arg.values.hasOwnProperty('advanceBooking')&&arg.values.advanceBooking>0){var _____________=___ Date(arg.values.start);var startDate=new Date(startDateFull.getFullYear(),startDateFull.getMonth(),startDateFull.getDate())
+var nowFull=new ____();___ now=new Date(nowFull.getFullYear(),nowFull.getMonth(),nowFull.getDate());var nowPlusAdvanceBookingDays=new Date(now.getTime()+arg.values.advanceBooking*24*60*60*1000);var _________________=(_________________________._______()-_________._______())/86400000;__(_________________ <=0){numberofdaystoadd=0;} var="" dtbgstartdate="new" date(startdate.gettime()+numberofdaystoadd*24*60*60*1000);var="" day="dtBgStartDate.getDate();var" month="dtBgStartDate.getMonth()+1;var" year=""></=0){numberofdaystoadd=0;}>< /><2)day='0'+day;bgstartdate=[year,month,day].join(' ).substring(0,10);}="" content+='<input name="startDay" type="hidden" value="' +bgstartdate+'"=""></2)day='0'+day;bgstartdate=[year,month,day].join('>';content+=' <input name="nrNights" type="hidden" value="'+arg.values.nights+'" />';}
+content+=' <input name="preselect" type="hidden" value="'+arg.values.preselect+'" />';}
+content+=' <input id="apikey" name="apikey" type="hidden" value="'+vars.apikey+'" />';content+=' <input name="url" type="hidden" value="'+window.location+'" />';content+=' <input name="channelKey" type="hidden" value="'+vars.channelKey+'" />';if(typeof selection!=="undefined"&&selection){selection.forEach((e,i)=>{selection[i]=+selection[i]})
+content+=' <input name="ck" type="hidden" value="'+selection.join('')+'" />';}
+if(typeof(pageTracker)==="object"){content+=' <input name="gacode" type="hidden" value="'+pageTracker.H+'" />';}
+B.setLinkerParam();if(bginit.vars.linkerParam!==""){content+=' <input name="_ga" type="hidden" value="'+bginit.vars.linkerParam.split(" =").pop()+'"="" />';}
+frm=document.createElement("form");frm.id="bgForm";frm.method="GET";if(vars.newWindow||(arg.target&&arg.target==="_blank")){frm.target="_blank";}
+frm.action=B.url.bg+'?'+bginit.vars.linkerParam;frm.innerHTML=content;document.body.appendChild(frm);bgy.util.Event.onAvailable("apikey",function(){document.getElementById("bgForm").submit();});},date:{get:function()
+{return B.vars.today;},dateToStandard:function(date,dateFormat)
+{try
+{var y=date.getFullYear(),m=date.getMonth()+1,d=date.getDate();if(m <10) {m="0" +m;}=""></10)><10) {d="0" +d;}="" if(dateformat)="" {fdate="dateFormat;fDate=fDate.replace(/Y/g,y);fDate=fDate.replace(/d/g,d);fDate=fDate.replace(/m/g,m);return" fdate;}="" return="" y+"-"+m+"-"+d;}="" catch(err)="" {return="" false;}},datetocalendar:function(date)="" {try="" {var="" y="date.getFullYear(),m=date.getMonth()+1,d=date.getDate();return" m+"/"+d+"/"+y;}="" catch(err)="" {return="" false;}},standardtocalendar:function(date)="" {try="" {var="" ar=""></10)><10&&d.length>1)
+{d=d.substr(1,1);}
+if(m <10&&m.length>1)
+{m=m.substr(1,1);}
+return m+"/"+d+"/"+y;}
+catch(err)
+{return false;}},standardToDate:function(dateString)
+{try
+{var ar=dateString.split("-",3);return ___ Date(ar[0],ar[1]-1,ar[2]);}
+catch(err)
+{return false;}},calendarToDate:function(dateString)
+{try
+{var ar=dateString.split("/",3);return new ____(__[2],__[0]-1,__[1]);}
+_____(___)
+{______ false;}},getCalPagedate:function(date,format)
+{switch(format)
+{case"standard":date=B.date.standardToDate(date);break;case"calendar":date=B.date.calendarToDate(date);break;default:break;}
+return(date.getMonth()+1)+"/"+date.getFullYear();}}};B.registerGadget();}()); </10&&m.length></10&&d.length></li;i++)>

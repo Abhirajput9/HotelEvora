@@ -1,0 +1,1 @@
+var renderRecaptcha=function(){for(var b=document.getElementsByClassName("g-recaptcha"),a=0;a<b.length;a++){var c=b[a],d=c.getAttribute("data-sitekey");grecaptcha.render(c.id,{sitekey:d,callback:function(a){}})}};

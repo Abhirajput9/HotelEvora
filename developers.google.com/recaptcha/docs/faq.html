@@ -1,0 +1,1363 @@
+<!doctype html>
+ <html lang="en" dir="ltr">
+   <head>
+<!-- Original URL: https://developers.google.com/recaptcha/docs/faq
+Date Downloaded: 25-03-2022 15:58:41 !-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com" />
+     <meta name="google-signin-scope" content="profile email https://www.googleapis.com/auth/developerprofiles https://www.googleapis.com/auth/developerprofiles.award" />
+     <meta property="og:site_name" content="Google Developers" />
+     <meta property="og:type" content="website" /><meta name="theme-color" content="#1a73e8" /><meta charset="utf-8" />
+     <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+     <link rel="manifest" href="/_pwa/developers/manifest.json" crossorigin="use-credentials" />
+     <link rel="preconnect" href="//www.gstatic.com" crossorigin="" />
+     <link rel="preconnect" href="//fonts.gstatic.com" crossorigin="" />
+     <link rel="preconnect" href="//fonts.googleapis.com" crossorigin="" />
+     <link rel="preconnect" href="//apis.google.com" crossorigin="" />
+     <link rel="preconnect" href="//www.google-analytics.com" crossorigin="" /><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap" />
+       <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Material+Icons&display=block" /><link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/ved68c5b45247708d39b942409c0b0cad28e05b5ea44da81f3513279ef6e829a1/developers/css/app.css" />
+       <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/ved68c5b45247708d39b942409c0b0cad28e05b5ea44da81f3513279ef6e829a1/developers/images/favicon.png" />
+     <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/ved68c5b45247708d39b942409c0b0cad28e05b5ea44da81f3513279ef6e829a1/developers/images/touchicon-180.png" /><link rel="canonical" href="https://developers.google.com/recaptcha/docs/faq" /><link rel="search" type="application/opensearchdescription+xml" title="Google Developers" href="https://developers.google.com/s/opensearch.xml" />
+      
+
+ <title>Frequently Asked Questions &nbsp;|&nbsp; _________ &nbsp;|&nbsp; Google Developers </title>
+
+ <meta property="og:title" content="Frequently Asked Questions &nbsp;|&nbsp; reCAPTCHA &nbsp;|&nbsp; Google Developers" /><meta property="og:url" content="https://developers.google.com/recaptcha/docs/faq" /><meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/ved68c5b45247708d39b942409c0b0cad28e05b5ea44da81f3513279ef6e829a1/developers/images/opengraph/google-blue.png" />
+   <meta property="og:image:width" content="1200" />
+   <meta property="og:image:height" content="675" /><meta property="og:locale" content="en" /><meta name="twitter:card" content="summary_large_image" /><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "reCAPTCHA",
+      "item": "https://developers.google.com/recaptcha"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Frequently Asked Questions",
+      "item": "https://developers.google.com/recaptcha/docs/faq"
+    }]
+  }
+  </script>
+  
+
+  
+
+  
+
+
+     </head>
+   <body class="" template="page" theme="google-blue" type="article" layout="docs" pending=""><div style="z-index: 9999; position: fixed; width: 100%; border: 0px; padding: 5px; margin: 0px; background-color: transparent;  font-size: 12pt; font-family: sans-serif;" id="web2disk_nag" onclick="javascript: document.getElementById('web2disk_nag').style.display = 'none';">
+		<div style="color: #000000; background-color:#F1F1F1; margin-left: auto; margin-right: auto; border-width: 2px; border-style: solid; width: 550px; ">
+			<div style="width: 100%; text-align: center; font-weight: bold; border: 0px; margin: 0px; padding: 0px">Hey, where did my words go? (Click to hide)</div>
+			<p>In the trial version of Web2Disk every fifth word is blanked out. 
+			To copy this site with all the words, please upgrade to the full version and copy this website again.</p>
+			<div style="width: 100%; text-align: center; font-weight: bold; border: 0px; margin: 0px; padding: 0px">
+				<a href="http://www.inspyder.com/products/Web2Disk/">Inspyder Web2Disk: The Website Downloader</a>
+			</div>
+		</div>
+	</div>
+     <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+  
+     <section class="devsite-wrapper"><devsite-header>
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="devsite-header--inner nocontent">
+   <div class="devsite-top-logo-row-wrapper-wrapper">
+     <div class="devsite-top-logo-row-wrapper">
+       <div class="devsite-top-logo-row">
+         <button type="button" id="devsite-hamburger-menu" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Navigation menu button" visually-hidden="" aria-label="Open menu">
+         </button>
+         <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+   <a href="https://developers.google.com/recaptcha">
+    
+   <div class="devsite-product-logo-container" size="medium">
+  
+    
+       <img class="devsite-product-logo" alt="reCAPTCHA" src="https://www.gstatic.com/images/icons/material/product/2x/recaptcha_48dp.png" srcset="" sizes="64px" loading="lazy" />
+    
+  
+   </div>
+  
+   </a>
+  
+
+  
+
+
+
+  
+  
+   <span class="devsite-product-name">
+     <ul class="devsite-breadcrumb-list">
+  
+   <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+   <a href="https://developers.google.com/recaptcha" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="1" track-type="globalNav" track-name="breadcrumb" track-metadata-position="1" track-metadata-eventdetail="reCAPTCHA">
+    
+          _________
+        
+   </a>
+  
+      
+    
+   </li>
+  
+ </ul>
+   </span>
+
+ </div>
+         <div class="devsite-top-logo-row-middle">
+           <div class="devsite-header-upper-tabs">
+            
+            </div>
+          
+ <devsite-search aria-expanded="false" aria-haspopup="listbox" enable-signin="" enable-search="" enable-suggestions="" enable-query-completion="" project-name="reCAPTCHA" tenant-name="Google Developers" project-scope="/recaptcha" url-scoped="https://developers.google.com/s/results/recaptcha" role="combobox">
+   <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+     <div class="devsite-search-container">
+       <div class="devsite-searchbox">
+         <input aria-activedescendant="" aria-autocomplete="list" aria-label="Search" aria-haspopup="false" aria-multiline="false" aria-label="Search box" autocomplete="off" class="devsite-search-field devsite-search-query" name="q" placeholder="Search" role="searchbox" type="text" value="" />
+         <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+       </div>
+       <button type="button" search-open="" class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Open search"></button>
+     </div>
+   </form>
+   <button type="button" search-close="" class="devsite-search-button devsite-header-icon-button button-flat material-icons" aria-label="Close search"></button>
+ </devsite-search>
+
+         </div>
+
+        
+
+        
+
+        
+ <devsite-language-selector>
+   <devsite-select class="devsite-language-selector-menu">
+    
+     <select aria-label="Select your language preference." class="devsite-language-selector-select" name="language" track-name="click" track-type="languageSelector">
+    
+      
+       <option />Language 
+    
+    
+       <option value="en" lang="en" />
+        English
+       
+    
+       <option value="id" lang="id" />
+        Bahasa _________
+       
+    
+       <option value="de" lang="de" />
+        Deutsch
+       
+    
+       <option value="es" lang="es" />
+        Español
+       
+    
+       <option value="fr" lang="fr" />
+        Français
+       
+    
+       <option value="pt_br" lang="pt_br" />
+        Português – Brasil
+       
+    
+       <option value="ru" lang="ru" />
+        Русский
+       
+    
+       <option value="zh_cn" lang="zh_cn" />
+        中文 – 简体
+       
+    
+       <option value="ja" lang="ja" />
+        日本語
+       
+    
+       <option value="ko" lang="ko" />
+        한국어
+       
+    
+     </select>
+   </devsite-select>
+ </devsite-language-selector>
+
+
+        
+
+        
+          
+          
+           <devsite-user enable-profiles="" fp-auth="" id="devsite-user">
+            
+              
+               <span class="button devsite-top-button" aria-hidden="true" visually-hidden="">Sign in </span>
+            
+         </devsite-user>
+           
+        
+       </div>
+     </div>
+   </div>
+
+
+
+   <div class="devsite-collapsible-section
+    ">
+     <div class="devsite-header-background">
+      
+        
+      
+      
+         <div class="devsite-doc-set-nav-row">
+          
+          
+            
+            
+   <devsite-tabs class="lower-tabs">
+
+     <nav class="devsite-tabs-wrapper" aria-label="Lower tabs">
+      
+        
+           <tab>
+             <a href="https://developers.google.com/recaptcha" class="gc-analytics-event " track-type="nav" track-metadata-eventdetail="https://developers.google.com/recaptcha" track-metadata-position="nav - home" track-metadata-module="primary nav" data-category="Site-Wide Custom Events" data-label="Tab: Home" track-name="home">
+  Home
+ </a>
+
+           </tab>
+        
+      
+        
+           <tab>
+             <a href="https://developers.google.com/recaptcha/intro" class="gc-analytics-event " track-type="nav" track-metadata-eventdetail="https://developers.google.com/recaptcha/intro" track-metadata-position="nav - guides" track-metadata-module="primary nav" data-category="Site-Wide Custom Events" data-label="Tab: Guides" track-name="guides">
+  Guides
+ </a>
+
+           </tab>
+        
+      
+        
+           <tab active="">
+             <a href="https://developers.google.com/recaptcha/docs/faq" class="gc-analytics-event " track-type="nav" track-metadata-eventdetail="https://developers.google.com/recaptcha/docs/faq" track-metadata-position="nav - support" track-metadata-module="primary nav" aria-label="Support, selected" data-category="Site-Wide Custom Events" data-label="Tab: Support" track-name="support">
+  Support
+ </a>
+
+           </tab>
+        
+      
+     </nav>
+
+   </devsite-tabs>
+
+          
+          
+         </div>
+      
+     </div>
+   </div>
+
+ </div>
+
+
+
+  
+ </devsite-header>
+       <devsite-book-nav scrollbars="">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="devsite-book-nav-filter
+            ">
+   <input type="text" placeholder="Filter" aria-label="Type to filter" role="searchbox" />
+  
+   <span class="filter-clear-button hidden" data-title="Clear filter" aria-label="Clear filter" role="button" tabindex="0"></span>
+ </div>
+
+ <nav class="devsite-book-nav devsite-nav nocontent" aria-label="Side menu">
+   <div class="devsite-mobile-header">
+     <button type="button" id="devsite-close-nav" class="devsite-header-icon-button button-flat material-icons gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Close navigation" aria-label="Close navigation">
+     </button>
+     <div class="devsite-product-name-wrapper">
+
+  
+    
+  
+   <a href="https://developers.google.com/recaptcha">
+    
+   <div class="devsite-product-logo-container" size="medium">
+  
+    
+       <img class="devsite-product-logo" alt="reCAPTCHA" src="https://www.gstatic.com/images/icons/material/product/2x/recaptcha_48dp.png" srcset="" sizes="64px" loading="lazy" />
+    
+  
+   </div>
+  
+   </a>
+  
+
+  
+
+
+  
+       <span class="devsite-product-name">
+        
+        
+         <ul class="devsite-breadcrumb-list">
+  
+   <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+      
+        
+   <a href="https://developers.google.com/recaptcha" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Upper Header" data-value="1" track-type="globalNav" track-name="breadcrumb" track-metadata-position="1" track-metadata-eventdetail="reCAPTCHA">
+    
+          _________
+        
+   </a>
+  
+      
+    
+   </li>
+  
+ </ul>
+       </span>
+    
+
+ </div>
+   </div>
+
+   <div class="devsite-book-nav-wrapper">
+     <div class="devsite-mobile-nav-top">
+      
+         <ul class="devsite-nav-list">
+          
+            
+ <li class="devsite-nav-item">
+
+  
+   <a href="/recaptcha" class="devsite-nav-title gc-analytics-event
+              
+              " data-category="Site-Wide Custom Events" data-label="Tab: Home" track-name="home" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Home" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav">
+  
+     <span class="devsite-nav-text" tooltip="">
+      Home
+    </span>
+    
+  
+   </a>
+  
+
+ </li>
+
+          
+            
+ <li class="devsite-nav-item">
+
+  
+   <a href="/recaptcha/intro" class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              " data-category="Site-Wide Custom Events" data-label="Tab: Guides" track-name="guides" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Guides" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav">
+  
+     <span class="devsite-nav-text" tooltip="">
+      Guides
+    </span>
+    
+     <span class="devsite-nav-icon material-icons" data-icon="forward">
+     </span>
+    
+  
+   </a>
+  
+
+ </li>
+
+          
+            
+ <li class="devsite-nav-item">
+
+  
+   <a href="/recaptcha/docs/faq" class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children
+              devsite-nav-active" data-category="Site-Wide Custom Events" data-label="Tab: Support" track-name="support" data-category="Site-Wide Custom Events" data-label="Responsive Tab: Support" track-type="navMenu" track-metadata-eventdetail="globalMenu" track-metadata-position="nav">
+  
+     <span class="devsite-nav-text" tooltip="">
+      Support
+    </span>
+    
+     <span class="devsite-nav-icon material-icons" data-icon="forward">
+     </span>
+    
+  
+   </a>
+  
+
+ </li>
+
+          
+          
+          
+         </ul>
+      
+     </div>
+    
+       <div class="devsite-mobile-nav-bottom" role="navigation">
+        
+          
+           <ul class="devsite-nav-list" menu="_book">
+             <li class="devsite-nav-item"><a href="/recaptcha/docs/faq" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Frequently Asked Questions </span></a></li>
+
+   <li class="devsite-nav-item
+           devsite-nav-external"><a href="https://stackoverflow.com/questions/tagged/recaptcha" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Stack Overflow </span><span class="devsite-nav-icon material-icons" data-icon="external" data-title="External" aria-hidden="true"></span></a></li>
+
+   <li class="devsite-nav-item"><a href="/recaptcha/docs/changelog" class="devsite-nav-title"><span class="devsite-nav-text" tooltip="">Change Log </span></a></li>
+           </ul>
+        
+        
+        
+          
+    
+  
+    
+  
+    
+  
+        
+       </div>
+    
+   </div>
+ </nav>
+        
+       </devsite-book-nav>
+       <section id="gc-wrapper">
+         <main role="main" class="devsite-main-content" has-book-nav="" has-sidebar="">
+          
+           <div class="devsite-sidebar">
+             <div class="devsite-sidebar-content">
+               <devsite-toc class="devsite-nav" role="navigation" aria-label="On this page" depth="2" scrollbars=""></devsite-toc>
+               <devsite-recommendations-sidebar class="nocontent devsite-nav">
+               </devsite-recommendations-sidebar>
+             </div>
+           </div>
+          
+           <devsite-content>
+            
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <article class="devsite-article">
+  
+  
+     <div class="devsite-banner devsite-banner-announcement">
+       <div class="devsite-banner-message">
+         <div class="devsite-banner-message-text">
+           <style>
+  .devsite-banner-announcement:not(.devsite-banner-tenant) {
+    background: #202124;
+    color: white;
+    font-weight: 500;
+  }
+  .devsite-banner-announcement a {
+    color: white;
+    font-weight: 700;
+  }
+  .devsite-banner-announcement a:link:not(.button),
+  .devsite-banner-announcement a:visited:not(.button) {
+    background: 0;
+  }
+  .devsite-banner-announcement a:hover,
+  .devsite-banner-announcement a:focus {
+    text-decoration: none;
+  }
+  .devsite-banner-announcement .devsite-banner-message-text {
+    margin: 0 auto;
+  }
+</style>  <span class="nocontent">
+  Google is _________ to advancing racial equity ___ Black communities.
+ </span>  <a href="https://google.com/racialequity" class="gc-analytics-event nocontent" data-category="Announcement" data-label="Racial Equity">See how. </a>
+
+         </div>
+       </div>
+     </div>
+  
+  
+
+   <div class="devsite-article-meta nocontent" role="navigation">
+    
+    
+     <ul class="devsite-breadcrumb-list" aria-label="Breadcrumb">
+  
+   <li class="devsite-breadcrumb-item
+             ">
+    
+    
+    
+      
+   <a href="https://developers.google.com/" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="1" track-type="globalNav" track-name="breadcrumb" track-metadata-position="1" track-metadata-eventdetail="">
+    
+        Home
+      
+   </a>
+  
+    
+   </li>
+  
+   <li class="devsite-breadcrumb-item
+             ">
+    
+      
+       <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+   <a href="https://developers.google.com/products" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="2" track-type="globalNav" track-name="breadcrumb" track-metadata-position="2" track-metadata-eventdetail="">
+    
+        Products
+      
+   </a>
+  
+    
+   </li>
+  
+   <li class="devsite-breadcrumb-item
+             ">
+    
+      
+       <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+   <a href="https://developers.google.com/recaptcha" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="3" track-type="globalNav" track-name="breadcrumb" track-metadata-position="3" track-metadata-eventdetail="reCAPTCHA">
+    
+        reCAPTCHA
+      
+   </a>
+  
+    
+   </li>
+  
+   <li class="devsite-breadcrumb-item
+             ">
+    
+      
+       <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+    
+    
+    
+      
+   <a href="https://developers.google.com/recaptcha/docs/faq" class="devsite-breadcrumb-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Breadcrumbs" data-value="4" track-type="globalNav" track-name="breadcrumb" track-metadata-position="4" track-metadata-eventdetail="">
+    
+        Support
+      
+   </a>
+  
+    
+   </li>
+  
+ </ul>
+    
+      
+     <devsite-thumb-rating position="header">
+     </devsite-thumb-rating>
+  
+    
+   </div>
+  
+  
+     <h1 class="devsite-page-title">Frequently Asked Questions </h1>
+  
+   <devsite-bookmark></devsite-bookmark>
+   <devsite-toc class="devsite-nav" depth="2" devsite-toc-embedded="">
+   </devsite-toc>
+
+  
+   <devsite-recommendations-dropdown class="nocontent"></devsite-recommendations-dropdown>
+  
+
+   <div class="devsite-article-body clearfix
+    ">
+
+    
+      
+
+
+ <dl>
+   <dt id="upgrade">
+     <h3 id="should-i-use-recaptcha-enterprise" data-text="Should I use reCAPTCHA Enterprise?">Should I use reCAPTCHA __________? </h3>
+   </dt>
+   <dd>
+     <p>
+      reCAPTCHA Enterprise offers 1 million assessments per month ___ free and additional features.
+       <a href="https://cloud.google.com/recaptcha-enterprise/docs/compare-versions" class="gc-analytics-event" data-category="recaptcha" data-label="cloud/recaptcha-enterprise/docs/compare-versions / Other features">
+        Other ________ </a>
+      such as real ____ analytics provide the best _____ to start for most __________.
+       <a href="http://cloud.google.com/recaptcha-enterprise" class="gc-analytics-event" data-category="recaptcha" data-label="cloud/recaptcha-enterprise - Get started here for free">
+        Get _______ here for free. </a>
+     </p>
+   </dd>
+
+   <dt id="migrating-to-Enterprise">
+     <h3 id="how-to-migrate-to-recaptcha-enterprise-from-v2-or-v3" data-text="How to migrate to reCAPTCHA Enterprise from v2 or v3?">How to migrate to _________ Enterprise from v2 or _3? </h3>
+   </dt>
+   <dd>
+     <p>
+      The  <a href="http://cloud.google.com/recaptcha-enterprise/docs/migrate-recaptcha" class="gc-analytics-event" data-category="recaptcha" data-label="cloud/recaptcha-enterprise/docs/migrate-recaptcha - migration process">
+        migration _______ </a>
+      takes 5-10 minutes __ complete and requires no ____ changes. </p>
+   </dd>
+
+   <dt id="v2-vs-v3">
+     <h3 id="should-i-use-recaptcha-v2-or-v3" data-text="Should I use reCAPTCHA v2 or v3?">Should I use reCAPTCHA _2 or v3? </h3>
+   </dt>
+   <dd>
+     <p>
+      reCAPTCHA v3 is ___ site owners who want ____ data about their traffic.
+      ___ more information, see the  <a href="/recaptcha/docs/v3">reCAPTCHA v3 developer guide </a>.
+     </p>
+     <p>We support security and _________ for v2. </p>
+     <p>
+      For more information _____ reCAPTCHA v2 and v3 ___________, see  <a href="/recaptcha/docs/versions">versions comparison </a>.
+     </p>
+   </dd>
+
+   <dt id="running-v2-with-v3">
+     <h3 id="can-i-run-recaptcha-v2-and-v3-on-the-same-page" data-text="Can I run reCAPTCHA v2 and v3 on the same page?">Can I run reCAPTCHA _2 and v3 on the ____ page? </h3>
+   </dt>
+   <dd>
+     <p>To do this, load ___ v3 site key as  <a href="/recaptcha/docs/v3">documented </a>,
+    ___ then explicitly render v2 _____ grecaptcha.render. </p>
+     <pre class="prettyprint" translate="no" dir="ltr">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;reCAPTCHA demo: Running ____ v2 and v3&lt;/title&gt;
+    &lt;script src="https://www.google.com/recaptcha/api.js?render= <i>v3_site_key </i>"&gt;&lt;/script&gt;
+    &__;______&__;
+      grecaptcha.ready(() => {
+        grecaptcha.render('html_element', {
+           'sitekey' : ' <i>v2_site_key </i>'
+        });
+      });
+    &lt;/script&gt;
+    &lt;script&gt;
+      function ________() {
+        grecaptcha.ready(() => {
+            grecaptcha.execute(' <i>v3_site_key </i>', {action: ' <i>homepage </i>'}).then((token) => {
+                <i>... </i>
+            });
+        });
+      }
+    &lt;/script&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+     </pre>
+   </dd>
+   <dt id="cookies">
+     <h3 id="does-recaptcha-use-cookies" data-text="Does reCAPTCHA use cookies?">Does reCAPTCHA use cookies? </h3>
+   </dt>
+   <dd>
+    _________ sets a necessary cookie (___________) when executed for the _______ of providing its risk ________.
+    If ___ prefer to not use ___ www.google.com domain which may ____ other cookies set, you ___ use www.recaptcha.net instead.
+   </dd>
+   <dt id="volume">
+     <h3 id="are-there-any-qps-or-daily-limits-on-my-use-of-recaptcha" data-text="Are there any QPS or daily limits on my use of reCAPTCHA?">Are there any QPS __ daily limits on my ___ of reCAPTCHA? </h3>
+   </dt>
+   <dd>
+    __ you wish to make ____ than 1000 calls per ______ or 1000000 calls per _____, you must use
+     <a href="https://cloud.google.com/recaptcha-enterprise" class="gc-analytics-event" data-category="recaptcha" data-label="cloud/recaptcha-enterprise - volume">
+        reCAPTCHA __________ </a> or fill out
+     <a href="https://forms.gle/caCX5Sgkz2N1maGa9">this form </a> and wait for __ exception approval.
+    If a site key _______ 1000 QPS, then some ________ may not be processed.
+    If a _3 site key exceeds its _______ quota, then site_verify may ____ open
+    __ returning a static score 0.9 and an error message `"____ free quota."`
+    for the remainder of ___ month. There are no ____-_______ indications when
+    v3 sites are over _____.
+    If _ v2 site key exceeds ___ monthly quota, then the _________ or a similar
+    message may be _________ to users in the _________ widget for the remainder
+    of the _____: `This site is exceeding _________ quota.`
+    ______ quota is enforced, site ______ will be notified by _____ three times
+    and given at least 90 days to migrate to _________ Enterprise.
+    ____ keys are considered over _____ if more than 1000000 _____ per month are
+    used for any ______. This includes if this ______ is spread across multiple
+    keys on ___ same domain.
+   </dd>
+   <dt id="hiding-badge">
+     <h3 id="id-like-to-hide-the-recaptcha-badge.-what-is-allowed" data-text="I'd like to hide the reCAPTCHA badge. What is allowed?">I'd like to hide ___ reCAPTCHA badge. What is _______? </h3>
+   </dt>
+   <dd>
+     <p>You are allowed to ____ the badge as long __ you include the reCAPTCHA ________ visibly in the user ____. Please include the following ____: </p>
+     <pre class="prettyprint lang-html" translate="no" dir="ltr">This site is protected __ reCAPTCHA and the Google
+    &lt;a href="https://policies.google.com/privacy">Privacy ______&__;/_> and
+    &__;_ href="https://policies.google.com/terms">Terms of Service&lt;/a> apply. </pre>
+     <p>For example:  </p><p><img src="/recaptcha/images/text_badge_example.png" /></p>
+     <p><b>Note: </b> if you choose __ hide the badge, please ___  <pre class="prettyprint lang-css" translate="no" dir="ltr">.grecaptcha-badge { visibility: hidden; } </pre></p>
+   </dd>
+
+   <dt id="automated_test">
+     <h3 id="id-like-to-run-automated-tests-with-recaptcha.-what-should-i-do" data-text="I'd like to run automated tests with reCAPTCHA. What should I do?">I'd like to run _________ tests with reCAPTCHA. What ______ I do? </h3>
+   </dt>
+   <dd>
+   <p>For reCAPTCHA v3, create _ separate key for testing ____________. Scores may not be ________ as reCAPTCHA v3 relies __ seeing real traffic. </p>
+   <p>For reCAPTCHA v2, use ___ following test keys. You ____ always get No CAPTCHA ___ all verification requests will ____. </p>
+   <ul>
+     <li>Site key: 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI </li>
+     <li>Secret key: 6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe </li>
+   </ul>
+   <p>The reCAPTCHA widget will ____ a warning message to ______ it's not used for __________ traffic. </p>
+   <p><img src="/recaptcha/images/recaptcha_test.png" width="260px" /></p>
+   </dd>
+
+   <dt id="admin_console">
+    <h3 id="how-can-i-see-more-about-my-websites-traffic" data-text="How can I see more about my website's traffic?">How can I see ____ about my website's traffic? </h3>
+   </dt>
+   <dd>
+   <p>reCAPTCHA reports daily stats __ the  <a href="https://www.google.com/recaptcha/admin">admin console </a>. </p>
+   </dd>
+
+   <dt id="global_usage">
+    <h3 id="can-i-use-recaptcha-globally" data-text="Can I use reCAPTCHA globally?">Can I use reCAPTCHA ________? </h3>
+   </dt>
+   <dd>
+   <p>Yes, please use "www.recaptcha.net" __ your code in circumstances ____ "www.google.com" is not accessible. </p>
+   <ul>
+     <li>First, replace &lt;script src="https:// <b>www.google.com </b>/recaptcha/api.js" async defer&gt;&lt;/script&gt; with &__;______ src="https:// <b>www.recaptcha.net </b>/recaptcha/api.js" async defer&gt;&lt;/script&gt; </li>
+     <li>After that, apply the ____ to everywhere else that ____ "www.google.com/recaptcha/" on your site. </li>
+   </ul>
+   </dd>
+
+   <dt id="customize_theme">
+     <h3 id="can-i-customize-the-recaptcha-widget-or-badge" data-text="Can I customize the reCAPTCHA widget or badge?">Can I customize the _________ widget or badge? </h3>
+   </dt>
+   <dd>
+     <p>Yes. reCAPTCHA offers two ______, light and dark, as _____ below. To choose a _____, simply
+      set the data-theme _________ in the  <a href="/recaptcha/docs/display#render_param">grecaptcha.render
+        parameter </a>. </p>
+     <p>Light theme: </p>
+     <p><img src="/recaptcha/images/light.png" width="260px" /></p>
+     <p>Dark theme: </p>
+     <p><img src="/recaptcha/images/dark.png" width="260px" /></p>
+   </dd>
+
+   <dt id="v3_options">
+     <h3 id="how-can-i-customize-recaptcha-v3" data-text="How can I customize reCAPTCHA v3?">How can I customize _________ v3? </h3>
+   </dt>
+   <dd>
+     <p>The  <a href="/recaptcha/docs/invisible#js_api">JavaScript API </a> available for Invisible _________ also works for v3. ______ use the JavaScript API __ explicitly render reCAPTCHA with _ v3 site key to ______ options such as repositioning ___ badge or changing the _____. </p>
+     <p>When rendering reCAPTCHA v3 ____ this method, remember to ___ the  <code translate="no" dir="ltr">size </code> parameter to  <code translate="no" dir="ltr">'invisible' </code> and use the ______ ID returned by  <code translate="no" dir="ltr">grecaptcha.render </code> when calling  <code translate="no" dir="ltr">grecaptcha.execute </code> instead of the ____ key. </p>
+   </dd>
+
+   <dt id="invalid_site_key">
+     <h3 id="recently-my-recaptcha-widget-started-displaying-invalid-site-key.-whats-happening" data-text="Recently my reCAPTCHA widget started displaying &quot;Invalid site key&quot;. What's happening?">Recently my reCAPTCHA widget _______ displaying "Invalid site key". ____'_ happening? </h3>
+   </dt>
+   <dd>
+     <p><img src="/recaptcha/images/invalidsitekey.png" width="260px" /></p>
+     <p>If you are seeing ____ error, your reCAPTCHA site ___ is no longer valid. __ activate, please
+     <a href="https://www.google.com/recaptcha/admin">register a new key </a> and follow the  <a href="/recaptcha/intro">instructions </a> on that page. </p>
+   </dd>
+   <dt id="blocked_frame">
+   <h3 id="im-getting-an-uncaught-securityerror:-blocked-a-frame-with-origin-https:www.google.com-from-accessing-a-frame-with-origin-ltyour-domaingt.-what-should-i-do" data-text="I'm getting an uncaught SecurityError: blocked a frame with origin &quot;https://www.google.com&quot; from accessing a frame with origin &quot;&amp;ltyour domain&amp;gt&quot;. What should I do?">I'm getting an uncaught _____________: blocked a frame with ______ "https://www.google.com" from accessing a _____ with origin "&amp;ltyour domain&amp;gt". ____ should I do? </h3>
+   </dt>
+   <dd>
+   <p>This typically occurs if ___ reCAPTCHA widget HTML element __ programmatically removed sometime after ___ end user clicks on ___ checkbox. We recommend using ___  <a href="/recaptcha/docs/display#js_api">grecaptcha.reset() </a> javascript function to _____ the reCAPTCHA widget. </p>
+  </dd>
+   <dt id="content_security_policy">
+     <h3 id="im-using-content-security-policy-csp-on-my-website.-how-can-i-configure-it-to-work-with-recaptcha" data-text="I'm using Content-Security-Policy (CSP) on my website. How can I configure it to work with reCAPTCHA?">I'm using Content-Security-Policy (CSP) __ my website. How can _ configure it to work ____ reCAPTCHA? </h3>
+   </dt>
+   <dd>
+     <p>We recommend using the _____-_____ approach documented with  <a href="https://w3c.github.io/webappsec-csp/#framework-directive-source-list">CSP3 </a>.
+       Make sure __ include your nonce in ___ reCAPTCHA  <a href="/recaptcha/docs/display#auto_render">api.js </a> script tag, and __'__ handle the rest. </p>
+     <p>Note: reCAPTCHA also works ____  <a href="https://w3c.github.io/webappsec-csp/#strict-dynamic-usage">'strict-dynamic' </a> on browsers that _______ it. </p>
+     <p>Alternatively, please add the _________ values to the directives: </p>
+     <ul>
+       <li><b>script-src </b> https://www.google.com/recaptcha/, https://www.gstatic.com/recaptcha/ </li>
+       <li><b>frame-src </b> https://www.google.com/recaptcha/, https://recaptcha.google.com/recaptcha/ </li>
+     </ul>
+   </dd>
+   <dt id="localhost_support">
+   <h3 id="im-getting-an-error-localhost-is-not-in-the-list-of-supported-domains.-what-should-i-do" data-text="I'm getting an error &quot;Localhost is not in the list of supported domains&quot;. What should I do?">I'm getting an error "_________ is not in the ____ of supported domains". What ______ I do? </h3>
+   </dt>
+   <dd>
+   <p>localhost domains are not _________ by default. If you ____ to continue supporting them ___
+    development ___ can add them to ___ list of supported domains ___ your site key.  __ to the
+     <a href="https://console.cloud.google.com/security/recaptcha">reCAPTCHA Enterprise console </a>
+    __ to the  <a href="https://www.google.com/recaptcha/admin">reCAPTCHA console </a>, as appropriate,
+    to update your ____ of supported domains. We ______ to use separate keys ___ development and
+    production, and to only _____ localhost on your development ____ key. </p>
+  </dd>
+   <dt id="ios10">
+     <h3 id="only-on-ios-10,-the-page-scrolls-to-the-bottom-when-the-user-completes-the-challenge" data-text="Only on iOS 10, the page scrolls to the bottom when the user completes the challenge?">Only on iOS 10, ___ page scrolls to the ______ when the user completes ___ challenge? </h3>
+   </dt>
+   <dd>
+   <p>This is a focusing ___ on Apple's side that __'__ reported to them. It _______ users only on iOS 10 and only on some _____. If you are affected, _ workaround is to move ___ reCAPTCHA widget higher or _____ on the page, or ___  <a href="/recaptcha/docs/v3">reCAPTCHA v3 </a>. </p>
+   </dd>
+   <dt id="dos">
+     <h3 id="my-computer-or-network-may-be-sending-automated-queries" data-text="My computer or network may be sending automated queries?">My computer or network ___ be sending automated queries? </h3>
+   </dt>
+   <dd>
+   <p>If you were directed __ this page from the _________ widget, you would have ____ a message that said "__'__ sorry, but your computer __ network may be sending _________ queries. To protect our _____, we can't process your _______ right now." </p>
+   <p>This can unfortunately happen __ good users for a ___ reasons: </p>
+   <ul>
+     <li>You may be on _ shared network that is _____ used abusively </li>
+     <li>Your internet service provider ___ have recently assigned you _ suspicious IP address </li>
+     <li>The site you are ______ to access may be _________ under heavy attack </li>
+   </ul>
+   <p>To troubleshoot these issues, ______ look at the  <a href="https://support.google.com/websearch/answer/86640">unusual traffic help page </a>, or try again _____. </p>
+   </dd>
+   <dt id="action_names">
+     <h3 id="what-action-names-are-valid" data-text="What action names are valid?">What action names are _____? </h3>
+   </dt>
+   <dd>
+   <p>Actions might contain only ____________ characters, slashes, and underscores.
+ _______ must not be user-specific. </p>
+   </dd>
+ </dl>
+
+    
+
+    
+   </div>
+
+  
+
+  
+    
+       <devsite-recommendations display="in-page" hidden="" yield="">
+       </devsite-recommendations>
+    
+    
+      
+     <devsite-thumb-rating position="footer">
+     </devsite-thumb-rating>
+  
+       
+    
+    
+       <devsite-recommendations id="recommendations-link" yield=""></devsite-recommendations>
+    
+  
+
+  
+  
+ </article>
+
+
+ <devsite-content-footer class="nocontent">
+   <p>Except as otherwise noted, ___ content of this page __ licensed under the  <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 _______ </a>, and code samples ___ licensed under the  <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License </a>. For details, see ___  <a href="https://developers.google.com/site-policies">Google Developers Site Policies </a>. Java is a __________ trademark of Oracle and/or ___ affiliates. </p>
+   <p>Last updated 2022-01-06 UTC. </p>
+ </devsite-content-footer>
+
+
+ <devsite-notification>
+ </devsite-notification>
+
+
+  
+ <div class="devsite-content-data">
+   <template class="devsite-thumb-rating-down-categories">
+  [{
+      "type": "_____-____",
+      "id": "missingTheInformationINeed",
+      "label":"Missing the ___________ I need"
+    },{
+      "type": "thumb-down",
+      "id": "__________________________",
+      "label":"Too complicated / too ____ steps"
+    },{
+      "type": "thumb-down",
+      "id": "outOfDate",
+      "_____":"___ of date"
+    },{
+      "type": "thumb-down",
+      "id": "________________",
+      "label":"Samples / code issue"
+    },{
+      "type": "_____-____",
+      "id": "otherDown",
+      "label":"Other"
+    }]
+   </template>
+   <template class="devsite-thumb-rating-up-categories">
+  [{
+      "type": "_____-__",
+      "id": "easyToUnderstand",
+      "label":"Easy to __________"
+    },{
+      "____": "thumb-up",
+      "id": "solvedMyProblem",
+      "label":"Solved __ problem"
+    },{
+      "type": "thumb-up",
+      "id": "otherUp",
+      "_____":"_____"
+    }]
+   </template>
+  
+ </div>
+            
+           </devsite-content>
+         </main>
+         <devsite-footer-promos class="devsite-footer">
+          
+            
+          
+         </devsite-footer-promos>
+         <devsite-footer-linkboxes class="devsite-footer">
+          
+            
+ <nav class="devsite-footer-linkboxes nocontent" aria-label="Footer links">
+  
+   <ul class="devsite-footer-linkboxes-list">
+    
+     <li class="devsite-footer-linkbox ">
+     <h3 class="devsite-footer-linkbox-heading no-link">Connect </h3>
+       <ul class="devsite-footer-linkbox-list">
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//googledevelopers.blogspot.com" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+          
+            Blog
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//www.facebook.com/Google-Developers-967415219957038" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+          
+            Facebook
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//medium.com/google-developers" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+          
+            Medium
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//twitter.com/googledevs" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+          
+            Twitter
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//www.youtube.com/user/GoogleDevelopers" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 5)">
+          
+            YouTube
+          
+           </a>
+          
+         </li>
+        
+       </ul>
+     </li>
+    
+     <li class="devsite-footer-linkbox ">
+     <h3 class="devsite-footer-linkbox-heading no-link">Programs </h3>
+       <ul class="devsite-footer-linkbox-list">
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//www.womentechmakers.com" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+          
+            Women Techmakers
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="/community/gdg" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+          
+            Google Developer ______
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="/community/experts" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+          
+            Google Developers _______
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="/community/accelerators" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+          
+            Accelerators
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="/community/gdsc" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 5)">
+          
+            Google Developer _______ Clubs
+          
+           </a>
+          
+         </li>
+        
+       </ul>
+     </li>
+    
+     <li class="devsite-footer-linkbox ">
+     <h3 class="devsite-footer-linkbox-heading no-link">Developer consoles </h3>
+       <ul class="devsite-footer-linkbox-list">
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//console.developers.google.com" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 1)">
+          
+            Google API _______
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//console.cloud.google.com" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 2)">
+          
+            Google Cloud ________ Console
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//play.google.com/apps/publish" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 3)">
+          
+            Google Play _______
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//console.firebase.google.com" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 4)">
+          
+            Firebase Console
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//console.actions.google.com" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 5)">
+          
+            Actions on ______ Console
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//cast.google.com/publish" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 6)">
+          
+            Cast SDK _________ Console
+          
+           </a>
+          
+         </li>
+        
+         <li class="devsite-footer-linkbox-item">
+          
+           <a href="//chrome.google.com/webstore/developer/dashboard" class="devsite-footer-linkbox-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Link (index 7)">
+          
+            Chrome Web _____ Dashboard
+          
+           </a>
+          
+         </li>
+        
+       </ul>
+     </li>
+    
+   </ul>
+  
+ </nav>
+          
+         </devsite-footer-linkboxes>
+         <devsite-footer-utility class="devsite-footer">
+          
+            
+
+ <div class="devsite-footer-utility nocontent">
+  
+  
+   <nav class="devsite-footer-sites" aria-label="Other Google Developers websites">
+     <a href="https://developers.google.com/" class="devsite-footer-sites-logo-link gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Developers Link">
+       <img class="devsite-footer-sites-logo" src="https://www.gstatic.com/devrel-devsite/prod/ved68c5b45247708d39b942409c0b0cad28e05b5ea44da81f3513279ef6e829a1/developers/images/lockup-developers.svg" loading="lazy" alt="Google Developers" />
+     </a>
+     <ul class="devsite-footer-sites-list">
+      
+       <li class="devsite-footer-sites-item">
+         <a href="//developer.android.com" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Android Link">
+          Android
+         </a>
+       </li>
+      
+       <li class="devsite-footer-sites-item">
+         <a href="//developer.chrome.com/home" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Chrome Link">
+          Chrome
+         </a>
+       </li>
+      
+       <li class="devsite-footer-sites-item">
+         <a href="//firebase.google.com" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Firebase Link">
+          Firebase
+         </a>
+       </li>
+      
+       <li class="devsite-footer-sites-item">
+         <a href="//cloud.google.com" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer Google Cloud Platform Link">
+          Google Cloud Platform
+         </a>
+       </li>
+      
+       <li class="devsite-footer-sites-item">
+         <a href="/products" class="devsite-footer-sites-link
+                  gc-analytics-event" data-category="Site-Wide Custom Events" data-label="Footer All products Link">
+          All products
+         </a>
+       </li>
+      
+     </ul>
+   </nav>
+  
+
+  
+   <nav class="devsite-footer-utility-links" aria-label="Utility links">
+    
+     <ul class="devsite-footer-utility-list">
+      
+       <li class="devsite-footer-utility-item
+                 ">
+        
+        
+         <a class="devsite-footer-utility-link gc-analytics-event" href="/terms/site-terms" data-category="Site-Wide Custom Events" data-label="Footer Terms link">
+          Terms
+         </a>
+        
+       </li>
+      
+       <li class="devsite-footer-utility-item
+                 ">
+        
+        
+         <a class="devsite-footer-utility-link gc-analytics-event" href="//policies.google.com/privacy" data-category="Site-Wide Custom Events" data-label="Footer Privacy link">
+          Privacy
+         </a>
+        
+       </li>
+      
+       <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+        
+         <span class="devsite-footer-utility-description">Sign up for the ______ Developers newsletter </span>
+        
+        
+         <a class="devsite-footer-utility-link gc-analytics-event" href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch" data-category="Site-Wide Custom Events" data-label="Footer Subscribe link">
+          Subscribe
+         </a>
+        
+       </li>
+      
+     </ul>
+    
+    
+    
+ <devsite-language-selector>
+   <devsite-select class="devsite-language-selector-menu">
+    
+     <select aria-label="Select your language preference." class="devsite-language-selector-select" name="language" track-name="click" track-type="languageSelector">
+    
+      
+       <option />Language 
+    
+    
+       <option value="en" lang="en" />
+        English
+       
+    
+       <option value="id" lang="id" />
+        Bahasa _________
+       
+    
+       <option value="de" lang="de" />
+        Deutsch
+       
+    
+       <option value="es" lang="es" />
+        Español
+       
+    
+       <option value="fr" lang="fr" />
+        Français
+       
+    
+       <option value="pt_br" lang="pt_br" />
+        Português – Brasil
+       
+    
+       <option value="ru" lang="ru" />
+        Русский
+       
+    
+       <option value="zh_cn" lang="zh_cn" />
+        中文 – 简体
+       
+    
+       <option value="ja" lang="ja" />
+        日本語
+       
+    
+       <option value="ko" lang="ko" />
+        한국어
+       
+    
+     </select>
+   </devsite-select>
+ </devsite-language-selector>
+
+   </nav>
+ </div>
+          
+         </devsite-footer-utility>
+         <devsite-panel></devsite-panel>
+       </section></section>
+     <devsite-sitemask></devsite-sitemask>
+     <devsite-snackbar>
+ </devsite-snackbar>
+     <devsite-tooltip></devsite-tooltip>
+     <devsite-heading-link></devsite-heading-link>
+     <devsite-analytics analytics-iframe="">
+      
+         <script type="application/json" analytics="">[{"dimensions": {"dimension5": "en", "dimension11": false, "dimension1": "Signed out", "dimension4": "reCAPTCHA", "dimension3": false, "dimension6": "en"}, "gaid": "UA-24532603-1", "metrics": {"ratings_count": "metric2", "ratings_value": "metric1"}}, {"dimensions": {"dimension5": "en", "dimension11": false, "dimension1": "Signed out", "dimension4": "reCAPTCHA", "dimension3": false, "dimension6": "en"}, "gaid": "UA-18267335-2", "metrics": {"ratings_count": "metric2", "ratings_value": "metric1"}}]</script>
+ <script type="application/json" gtm="">{"parameters": {"freeTrialEligibleUser": "True", "internalUser": "False", "language": {"machineTranslated": "False", "requested": "en", "served": "en"}, "pageType": "article", "projectName": "reCAPTCHA", "signedIn": "False", "tenant": "developers", "recommendations": {"sourcePage": "", "sourceType": 0, "sourceRank": 0, "sourceIdenticalDescriptions": 0, "sourceTitleWords": 0, "sourceDescriptionWords": 0, "experiment": ""}}, "tags": []}</script>
+      
+     </devsite-analytics>
+    
+       <devsite-badger></devsite-badger>
+    
+    
+     <script nonce="ph7VhC6g8cnW59EPrDi/DFwP37TAoc">
+  
+  (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/ved68c5b45247708d39b942409c0b0cad28e05b5ea44da81f3513279ef6e829a1/developers/js/app_loader.js', '[1,"en",null,"/js/devsite_app_module.js","https://www.gstatic.com/devrel-devsite/prod/ved68c5b45247708d39b942409c0b0cad28e05b5ea44da81f3513279ef6e829a1","https://www.gstatic.com/devrel-devsite/prod/ved68c5b45247708d39b942409c0b0cad28e05b5ea44da81f3513279ef6e829a1/developers","https://developers-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/developers/manifest.json","https://www.gstatic.com/devrel-devsite/prod/ved68c5b45247708d39b942409c0b0cad28e05b5ea44da81f3513279ef6e829a1/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/ved68c5b45247708d39b942409c0b0cad28e05b5ea44da81f3513279ef6e829a1/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700&display=swap"],1,null,[1,6,8,12,14,17,18,21,25,40,50,63,70,75,76,80,87,91,92,93,97,98,100,101,102,103,104,105,107,108,109,110,111,112,113,115,117,118,120,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,138,140,141,144,147,148,149,150,151,152,153,154,155,156,157,158,159,161,163,164,165,168,169,170,173,179,182,186],"AIzaSyAP-jjEJBzmIyKR4F-3XITp8yM9T1gEEI8","AIzaSyB6xiKGDR5O3Ak2okS4rLkauxGUG7XP0hg","developers.google.com","AIzaSyAQk0fBONSGUqCNznf6Krs82Ap1-NV6J4o","AIzaSyCCxcqdrZ_7QMeLCRY20bh_SXdAYqy70KY"]')
+  
+</script>
+     <devsite-a11y-announce></devsite-a11y-announce>
+   </body>
+ </html>
